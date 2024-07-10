@@ -1,2 +1,2 @@
 # ai-vector
-My re-implementation of the std::vector that exposes exactly the same compile time interface as the C++ standard library. 
+My re-implementation of the std::vector STL Container that exposes exactly the same Compile Time Interface as the C++ Standard Library.
