@@ -1,7 +1,11 @@
 # include <iostream>
+# include "vector.hpp"
 
 int main() {
-  std::cout << "Hello World!" << std::endl ;
+  ai::vector<int> obj ;
+
+
+  std::cout << "Hello World! " << obj.size() << std::endl ;
 
   return (0) ;
 }
