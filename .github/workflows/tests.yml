@@ -7,9 +7,9 @@ on:
   pull_request:
     branches: ["main"]
 
-# defaults:
-#   run:
-#     shell: bash
+defaults:
+  run:
+    shell: bash
 #     working-directory: ./build
 
 jobs:
