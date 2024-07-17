@@ -1,0 +1,19 @@
+
+name: Unit/Module Tests for aivector Class
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+defaults:
+  run:
+    shell: bash
+    working-directory: ./build
+
+jobs:
+  tests_job:
+    runs-on: ubuntu-latest
+    steps:
+    - run: cmake --h
