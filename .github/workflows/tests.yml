@@ -10,7 +10,7 @@ on:
 defaults:
   run:
     shell: bash
-    working-directory: ./build
+    working-directory: build
 
 jobs:
   tests_job:
