@@ -22,6 +22,7 @@ jobs:
         cmake-version: '3.16.x'
     - name: Use cmake
       uses: actions/checkout@v4
+    - name: Run cmake
       run: cmake --version
     # - uses: actions/checkout@v4
     # - run: cmake --version
