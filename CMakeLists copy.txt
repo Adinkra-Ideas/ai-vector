@@ -9,7 +9,7 @@ set(Main main.cpp)
 set(AllFiles
     vector.hpp)
 set(Testers
-    vector_unittest.cpp)
+    vector_unittest.hpp)
 
 add_executable(aivector ${Main} ${AllFiles})
 if (MSVC)
@@ -25,11 +25,7 @@ else()
         -Wpedantic)
 endif()
 
-add_executable(aivectorTDD ${AllFiles} ${Testers})
-target_link_options(aivectorTDD PUBLIC 
-          -lgtest_main
-          -lgtest
-          -pthread)
+add_executable(aivectorTDD ${AllFiles} ${Testers})...
 
 include(GNUInstallDirs)
 install(TARGETS aivector

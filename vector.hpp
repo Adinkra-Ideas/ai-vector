@@ -1,6 +1,7 @@
-#pragma once
-#ifndef AIVECTOR_HPP
-#define AIVECTOR_HPP
+#ifndef AIVECTOR_HPP_
+#define AIVECTOR_HPP_
+
+#include <iostream>
 
 namespace ai {
   
