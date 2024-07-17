@@ -23,7 +23,10 @@ jobs:
       with:
         cmake-version: '3.16.x'
     - name: Run cmake
-      # uses: actions/checkout@v4
       run: cmake --version
-      # working-directory: ./temp
+    - name: Run multi cmd
+      run: |
+        echo hello
+        echo hi there
+
 
