@@ -10,12 +10,14 @@ on:
 defaults:
   run:
     shell: bash
-#     working-directory: ./build
+    working-directory: ./build
 
 jobs:
   tests_job:
     runs-on: ubuntu-latest
     steps:
+    - name: Checkout
+      uses: actions/checkout@v4
     - name: Setup cmake
       uses: jwlawson/actions-setup-cmake@v2
       with:
@@ -23,4 +25,5 @@ jobs:
     - name: Run cmake
       # uses: actions/checkout@v4
       run: cmake --version
-      working-directory: ./build
+      # working-directory: ./temp
+
